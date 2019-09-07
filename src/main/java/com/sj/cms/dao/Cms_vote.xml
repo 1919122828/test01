@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sj.cms.dao.Cms_vote">
+	<insert id="inserttp">
+		insert into cms_vote set user=#{user_id},article_id,option_id
+	</insert>
+	
+	<select id="looknewtp">
+		select * from cms_vote where contTyep=3
+	</select>
+	
+	<select id="ckjle">
+		(select ROUND((COUNT(option_id)/select COUNT(option_id) from cms_vote where article_id=v1.article_id ),1),article_id from cms_vote where article_id=23 GROUP BY article_id) v1 
+	</select>
+	
+	<update id="ck">
+			update cms_articel set hits=#{hits+i}
+	</update>
+
+</mapper>
