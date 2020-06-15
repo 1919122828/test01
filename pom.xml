@@ -19,7 +19,7 @@
 		<jackson.version>2.9.1</jackson.version>
 		<poi.version>3.9</poi.version>
 		<jstl.version>1.2</jstl.version>
-		<validator.version>4.3.0.Final</validator.version>
+		<validator.version>5.3.5.Final</validator.version>
 		<servlet-api.version>2.5</servlet-api.version>
 		<jsp-api.version>2.0</jsp-api.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
